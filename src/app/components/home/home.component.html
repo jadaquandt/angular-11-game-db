@@ -16,21 +16,25 @@
     </mat-form-field>
 
     <div class="games">
+        <ng-container *ngFor="let game of games">
         <div class="game">
             <div class="game-thumb-container">
-                <img 
-                src="https://www.fillmurray.com/640/360" 
+                <img
+                *ngIf="game.background_image" 
+                src="{{game.background_image}}"
                 alt="thumbnail" 
                 class="game-thumbnail">
+            <p *ngIf="!game.background_image">No Image Found</p>
             </div>
             <div class="game-description">
-                <p class="game-name">Name</p>
-                <div class="game-platforms">
-                    <img 
-                    src="https://www.fillmurray.com/100/100"
-                    alt="slug">
-                </div>
+                <p class="game-name">{{game.name}}</p>
+                <ul class="game-platforms">
+                    <li 
+                    class="game-platform"
+                    *ngFor="let gamePlatform of game.parent_platforms">{{gamePlatform.platform.name}} | </li>
+                </ul>
             </div>
         </div>
+        </ng-container>
     </div>
 </div>

@@ -85,18 +85,20 @@
     color: #fff;
     font-weight: 700;
     font-size: 22px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     white-space: nowrap;
     text-overflow: ellipsis;
-    overflow: hidden;
+    // overflow: hidden;
   }
 
   &-platforms {
+    color: lightgrey;
+    list-style: none;
+    font-size: 8px;
     display: flex;
   }
 
   &-platform {
-    width: 20px;
-    margin-right: 10px;
+    margin: 1px;
   }
 }
