@@ -2,10 +2,10 @@
 
 ## TO DO
 
-- - 404 Page
-- - Hide tab when there are no screenshots
-    _- Change styling
-    _- Update with a different api?
+- 404 Page
+- Hide tab when there are no screenshots
+- Change styling
+- Update with a different api?
 
 ---
 
